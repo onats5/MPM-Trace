@@ -1,0 +1,7 @@
+class NextoPluginRemoteCommunicator
+{
+	PROP(bool currState=false);
+	SLOT(server_slot(bool clientState));
+        SLOT(requestForPrgName());
+        SIGNAL(programChanged(QString name));
+};
